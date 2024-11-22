@@ -1,0 +1,7 @@
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/CappuccinoEngine.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/edit_cache.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/rebuild_cache.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/list_install_components.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/install.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/install/local.dir
+/home/guy/Documents/CProgramming/CappuccinoEngine/build/CMakeFiles/install/strip.dir
