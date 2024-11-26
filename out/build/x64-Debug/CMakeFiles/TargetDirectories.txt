@@ -1,0 +1,6 @@
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/CappuccinoEngine.dir
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/list_install_components.dir
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/install.dir
+C:/DEV/CappuccinoEngine/out/build/x64-Debug/CMakeFiles/install/local.dir
