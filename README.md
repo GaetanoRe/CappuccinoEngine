@@ -1,5 +1,5 @@
 # CappuccinoEngine
-Open-Source Modular Game Engine made to be able to run on all platforms from it's conception to when it fully releases. It is a base to help game developers have complete freedom with whatever game they want to make. The goal of this project is to make building this engine as easy and as streamlined as possible for anyone looking to create their own engine. Tho this engine will come with improvement down the line, it is open source so if you have a better idea on how this engine can improve, you have full freedom to do what you want on your own fork.
+Open-Source Modular Game Engine made to be able to run on all platforms from it's conception to when it fully releases. It is a base to help game developers have complete freedom with whatever game they want to make. The goal of this project is to make building this engine as easy and as streamlined as possible for anyone looking to create their own engine, or to be an engine that is completey modular and easy to understand for others. Though this engine will come with improvements down the line, it is open source so if you have a better idea on how this engine can improve, you have full freedom to do what you want on your own fork.
 
 ## Using the Engine
 Just download one of the releases on the github and run the exe, there should be no issues unless you downloaded it for the wrong system.
