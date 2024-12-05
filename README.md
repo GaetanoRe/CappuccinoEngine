@@ -48,8 +48,12 @@ Just download one of the releases on the github and run the exe, there should be
 ### When Using Cmake Manually
 Make sure you type your commands to build the project in the command line as shown:
 #### For Windows:
+```
 cmake -S <source_dir> -B <build_dir> -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
+```
 
 #### For Mac/Linux:
+```
 cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+```
 
