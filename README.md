@@ -8,11 +8,41 @@ Just download one of the releases on the github and run the exe, there should be
 ### Tools you will need (This list is for ALL Systems):
 - Git
 - Vcpkg
-- cmake
+- CMake
 - Any type of code editor or IDE designed for C++ or C (make sure you use cmake so that it integrates with vcpkg)
+
+### Tools you will need (System Specific):
+#### For Windows:
+- Visual Studio 2022 with the C++ Desktop Environment Package (Disclaimer: If you would like to use Visual studio code, that is fine, but you must install this for the native windows C++ compiler and C compiler)
+#### For Mac/Linux
+- Ninja
+
 
 ### Setup
 1) Clone this repository into your designated area for projects.
 2) Go to the setup-files directory and there should be two folders. These folders contain scripts that run on the designated operating systems for vcpkg to download and build the libraries for you, minimizing setup. (Disclaimer: If vcpkg is not in any PATH environment variable, it will not work. For Linux/Mac users, you should only need to have vcpkg cloned in your home directory)
 3) Once the libraries are fully downloaded, just go to your command prompt, type: vcpkg integrate install, and vcpkg will automatically configure your build system to work with the libraries it just downloaded
+
+### Setup for VSCode
+1) You will need to download all extensions for CMake and C/C++
+2) Go to your settings.json and add this to the list of settings:
+#### For Windows:
+```
+}
+"cmake.configureArgs": [
+    "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
+    ],
+    "cmake.generator": "Visual Studio 17 2022"
+{
+```
+#### For Mac/Linux:
+```
+}
+"cmake.configureArgs": [
+    "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
+    ],
+    "cmake.generator": "Ninja"
+{
+```
+
 
