@@ -1,5 +1,14 @@
 @echo off
 
+:: Path to the libraries file
+set LIBRARIES_FILE=..\..\libraries.txt
+
+:: Check if libraries file exists
+if not exist %LIBRARIES_FILE% (
+    echo libraries.txt not found in the project root. Please create it and list the libraries to install.
+    exit /b 1
+)
+
 :: Check if vcpkg is in the PATH
 where vcpkg >nul 2>nul
 if %ERRORLEVEL% neq 0 (
@@ -9,11 +18,8 @@ if %ERRORLEVEL% neq 0 (
 
 echo vcpkg found in PATH.
 
-:: List of libraries to install
-set LIBRARIES=glfw3 glew soil freetype glm bullet3 openal-soft
-
-:: Install libraries
-for %%L in (%LIBRARIES%) do (
+:: Install libraries from file
+for /f "tokens=*" %%L in (%LIBRARIES_FILE%) do (
     echo Installing %%L...
     vcpkg install %%L --triplet x64-windows || exit /b 1
 )

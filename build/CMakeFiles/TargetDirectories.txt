@@ -1,0 +1,4 @@
+C:/DEV/C++Prog/CappuccinoEngine/build/CMakeFiles/CappuccinoEngine.dir
+C:/DEV/C++Prog/CappuccinoEngine/build/CMakeFiles/INSTALL.dir
+C:/DEV/C++Prog/CappuccinoEngine/build/CMakeFiles/ALL_BUILD.dir
+C:/DEV/C++Prog/CappuccinoEngine/build/CMakeFiles/ZERO_CHECK.dir

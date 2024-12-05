@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(CappuccinoEngine)
 
+
 # Set C++ Standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,10 +12,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Determine the platform-specific output directory
 if (WIN32)
     set(PLATFORM "windows")
+    set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
 elseif (APPLE)
     set(PLATFORM "macos")
+    set(CMAKE_TOOLCHAIN_FILE "$ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake")
 elseif (UNIX)
     set(PLATFORM "linux")
+    set(CMAKE_TOOLCHAIN_FILE "$ENV{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake")
 else()
     set(PLATFORM "unknown")
 endif()
@@ -23,7 +27,6 @@ endif()
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/${PLATFORM}/$<CONFIG>)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib/${PLATFORM}/$<CONFIG>)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib/${PLATFORM}/$<CONFIG>)
-
 # Ensure compatibility with multi-configuration generators (e.g., Visual Studio)
 foreach(config ${CMAKE_CONFIGURATION_TYPES})
     string(TOUPPER ${config} config_upper)

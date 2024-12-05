@@ -12,19 +12,20 @@ fi
 # Add vcpkg to PATH
 export PATH="$VCPKG_DIR:$PATH"
 
-# List of libraries to install
-LIBRARIES=(
-    "glfw3"
-    "glew"
-    "soil"
-    "freetype"
-    "glm"
-    "bullet3"
-    "openal-soft"
-)
+# Path to the libraries list file
+LIBRARIES_FILE="../../libraries.txt"
+
+# Check if libraries file exists
+if [ ! -f "$LIBRARIES_FILE" ]; then
+    echo "libraries.txt not found in the project root. Please create it and list the libraries to install."
+    exit 1
+fi
+
+# Read libraries from file
+LIBRARIES=$(cat "$LIBRARIES_FILE")
 
 # Install libraries
-for LIB in "${LIBRARIES[@]}"; do
+for LIB in $LIBRARIES; do
     echo "Installing $LIB..."
     vcpkg install $LIB --triplet x64-linux || exit 1
 done

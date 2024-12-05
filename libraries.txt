@@ -1,0 +1,7 @@
+glfw3
+glew
+soil
+freetype
+glm
+bullet3
+openal-soft
