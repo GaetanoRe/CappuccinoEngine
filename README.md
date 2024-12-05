@@ -17,8 +17,19 @@ Just download one of the releases on the github and run the exe, there should be
 #### For Mac/Linux
 - Ninja
 
+### VCPKG Enviornment Setup
+#### Windows:
+1) Clone the official vcpkg repository anywhere in your files : https://github.com/microsoft/vcpkg.git
+2) Double click the bootstrap-vcpkg.bat file and it will download the executable
+3) Go to the Start menu and look for "Edit Environment Variables"
+4) Go to the PATH variable and add the location of the vcpkg repo to the list of PATH variables
+5) Create a System Environment variable named "VCPKG_ROOT"
+6) Open the command prompt and type "vcpkg" if a bunch of options came up, it should be installed properly.
 
-### Setup
+#### Linux/Mac:
+1) 
+
+### Setup (For after VCPKG Environment Setup)
 1) Clone this repository into your designated area for projects.
 2) Go to the setup-files directory and there should be two folders. These folders contain scripts that run on the designated operating systems for vcpkg to download and build the libraries for you, minimizing setup. (Disclaimer: If vcpkg is not in any PATH environment variable, it will not work. For Linux/Mac users, you should only need to have vcpkg cloned in your home directory)
 3) Once the libraries are fully downloaded, just go to your command prompt, type: vcpkg integrate install, and vcpkg will automatically configure your build system to work with the libraries it just downloaded
