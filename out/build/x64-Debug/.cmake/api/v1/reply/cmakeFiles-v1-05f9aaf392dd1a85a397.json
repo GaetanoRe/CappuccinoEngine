@@ -210,6 +210,51 @@
 			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/glew-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/glew-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/glew-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/glew-targets-release.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glew/CopyImportedTargetProperties.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glm/glmConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glm/glmConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glm/glmConfig-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/glm/glmConfig-release.cmake"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindBullet.cmake"
@@ -238,6 +283,80 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/freetype-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/freetype-config.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindZLIB.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/freetype-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/freetype-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype/freetype-targets-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/soil/soilConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/soil/soilConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/soil/soilTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/DEV/vcpkg/installed/x64-windows/share/soil/soilTargets-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

@@ -1330,6 +1330,106 @@
 			"value" : "[TRUE][v()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_ZLIB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding ZLIB"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[optimized;C:/DEV/vcpkg/installed/x64-windows/lib/zlib.lib;debug;C:/DEV/vcpkg/installed/x64-windows/debug/lib/zlibd.lib][C:/DEV/vcpkg/installed/x64-windows/include][c ][v1.3.1()]"
+		},
+		{
+			"name" : "FREETYPE_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "vcpkg"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/debug/lib/freetyped.lib"
+		},
+		{
+			"name" : "FREETYPE_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "vcpkg"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/lib/freetype.lib"
+		},
+		{
+			"name" : "Freetype_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Freetype."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/freetype"
+		},
+		{
+			"name" : "GLEW_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for GLEW."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/glew"
+		},
+		{
+			"name" : "GLEW_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : ""
+		},
+		{
+			"name" : "GLEW_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : ""
+		},
+		{
 			"name" : "OPENAL_INCLUDE_DIR",
 			"properties" : 
 			[
@@ -1372,6 +1472,38 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/openal-soft"
+		},
+		{
+			"name" : "SOIL_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : ""
+		},
+		{
+			"name" : "SOIL_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1522,6 +1654,54 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "ZLIB_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/include"
+		},
+		{
+			"name" : "ZLIB_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/debug/lib/zlibd.lib"
+		},
+		{
+			"name" : "ZLIB_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/lib/zlib.lib"
+		},
+		{
 			"name" : "Z_VCPKG_BUILTIN_POWERSHELL_PATH",
 			"properties" : 
 			[
@@ -1616,6 +1796,30 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/glfw3"
+		},
+		{
+			"name" : "glm_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for glm."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/glm"
+		},
+		{
+			"name" : "soil_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for soil."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/DEV/vcpkg/installed/x64-windows/share/soil"
 		}
 	],
 	"kind" : "cache",

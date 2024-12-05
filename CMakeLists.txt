@@ -35,31 +35,51 @@ endforeach()
 # Find GLFW
 find_package(glfw3 REQUIRED)
 
+# Find GLEW
+find_package(GLEW REQUIRED)
+
+#Find GLM
+find_package(glm CONFIG REQUIRED)
+
 # Find Bullet
 find_package(Bullet REQUIRED)
 
 # Find OpenAL
 find_package(OpenAL REQUIRED)
 
+# Find FreeType
+find_package(Freetype REQUIRED)
+
+# Find SOIL
+find_package(soil CONFIG REQUIRED)
+
 # Add source files for the executable
 add_executable(${PROJECT_NAME}
     src/main.cpp
     src/engine.cpp
     src/window.cpp
-)
+ "include/renderer.h")
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME}
     glfw
+    glm::glm
+    soil
     ${BULLET_LIBRARIES}
+    GLEW::GLEW
     OpenAL::OpenAL
+    Freetype::Freetype
 )
 
-# Include directories for GLFW, Bullet, and OpenAL
+# Include directories for Required Libraries
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${GLFW_INCLUDE_DIR}
+    ${GLEW_INCLUDE_DIR}
+    ${GLM_INCLUDE_DIR}
     ${BULLET_INCLUDE_DIR}
     ${OPENAL_INCLUDE_DIR}
+    ${SOIL_INCLUDE_DIR}
+    ${FREETYPE_INCLUDE_DIR}
 )
 
 # Platform-specific configurations
