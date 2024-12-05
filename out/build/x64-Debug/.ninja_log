@@ -1,5 +1,0 @@
-# ninja log v5
-17	941	7542945954214156	CMakeFiles/CappuccinoEngine.dir/src/window.cpp.obj	13868b6c40f199dc
-12	944	7542945954247529	CMakeFiles/CappuccinoEngine.dir/src/engine.cpp.obj	20f2d33130c1e0e9
-5	1028	7542945955104067	CMakeFiles/CappuccinoEngine.dir/src/main.cpp.obj	a89dfda3dbd403bb
-1029	1977	7542945957831752	bin/windows/Debug/CappuccinoEngine.exe	14d9c26fcb03a05e
