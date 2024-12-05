@@ -41,7 +41,7 @@ Just download one of the releases on the github and run the exe, there should be
 "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
     ],
-    "cmake.generator": "Visual Studio 17 2022"
+    "cmake.generator": "Ninja"
 {
 ```
 
