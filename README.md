@@ -13,6 +13,6 @@ Just download one of the releases on the github and run the exe, there should be
 
 ### Setup
 1) Clone this repository into your designated area for projects.
-2) Go to the setup-files directory and there should be two folders. These folders contain scripts that run on the designated operating systems for vcpkg to download and build the libraries for you, minimizing setup. (Disclaimer: If vcpkg is not in any PATH environment variable, it will not work)
+2) Go to the setup-files directory and there should be two folders. These folders contain scripts that run on the designated operating systems for vcpkg to download and build the libraries for you, minimizing setup. (Disclaimer: If vcpkg is not in any PATH environment variable, it will not work. For Linux/Mac users, you should only need to have vcpkg cloned in your home directory)
 3) Once the libraries are fully downloaded, just go to your command prompt, type: vcpkg integrate install, and vcpkg will automatically configure your build system to work with the libraries it just downloaded
 
