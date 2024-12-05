@@ -398,3 +398,32 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# CMake build directories
+/build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ninja build files (if you use Ninja)
+build.ninja
+rules.ninja
+
+# Visual Studio project files (optional)
+*.vcxproj*
+*.sln
+
+# Unix Makefiles
+Makefile
+
+# Generated project files
+*.cbp  # Code::Blocks project files
+*.xcodeproj  # Xcode project files
+
+# Custom build directories
+out/
+build_*/
+
+# Logs and temporary files
+*.log
