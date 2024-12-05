@@ -13,7 +13,7 @@ Just download one of the releases on the github and run the exe, there should be
 
 ### Tools you will need (System Specific):
 #### For Windows:
-- Visual Studio 2022 with the C++ Desktop Environment Package (Disclaimer: If you would like to use Visual studio code, that is fine, but you must install this for the native windows C++ compiler and C compiler)
+- Visual Studio 2022 with the C++ Desktop Environment Package (Disclaimer: If you would like to use Visual Studio Code, that is fine, but you must install this for the native windows C++ compiler and C compiler)
 #### For Mac/Linux
 - Ninja
 
