@@ -1,2 +1,18 @@
 # CappuccinoEngine
-Open-Source Modular Game Engine...
+Open-Source Modular Game Engine made to be able to run on all platforms from it's conception to when it fully releases. It is a base to help game developers have complete freedom with whatever game they want to make. The goal of this project is to make building this engine as easy and as streamlined as possible for anyone looking to create their own engine. Tho this engine will come with improvement down the line, it is open source so if you have a better idea on how this engine can improve, you have full freedom to do what you want on your own fork.
+
+## Using the Engine
+Just download one of the releases on the github and run the exe, there should be no issues unless you downloaded it for the wrong system.
+
+## Building the Engine
+### Tools you will need (This list is for ALL Systems):
+- Git
+- Vcpkg
+- cmake
+- Any type of code editor or IDE designed for C++ or C (make sure you use cmake so that it integrates with vcpkg)
+
+### Setup
+1) Clone this repository into your designated area for projects.
+2) Go to the setup-files directory and there should be two folders. These folders contain scripts that run on the designated operating systems for vcpkg to download and build the libraries for you, minimizing setup. (Disclaimer: If vcpkg is not in any PATH environment variable, it will not work)
+3) Once the libraries are fully downloaded, just go to your command prompt, type: vcpkg integrate install, and vcpkg will automatically configure your build system to work with the libraries it just downloaded
+
