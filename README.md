@@ -14,8 +14,23 @@ Just download one of the releases on the github and run the exe, there should be
 ### Tools you will need (System Specific):
 #### For Windows:
 - Visual Studio 2022 with the C++ Desktop Environment Package (Disclaimer: If you would like to use Visual Studio Code, that is fine, but you must install this for the native windows C++ compiler and C compiler)
-#### For Mac/Linux
+#### For Linux
 - Ninja
+- libxinerama
+- libxcursor
+- xorg
+- libglu1-mesa
+- pkg-config
+- autoconf
+- libtool
+
+#### For Mac
+- Ninja 
+- pkg-config 
+- autoconf 
+- libtool
+- XCode Command Line Tools
+
 
 ### VCPKG Enviornment Setup
 #### Windows:
@@ -27,7 +42,49 @@ Just download one of the releases on the github and run the exe, there should be
 6) Open the command prompt and type "vcpkg" if a bunch of options came up, it should be installed properly.
 
 #### Linux/Mac:
-1) 
+1) Clone the github repository into the ~/ directory using this link: https://github.com/microsoft/vcpkg.git
+2) Go to the vcpkg directory and do this command:
+```
+sudo chmod +x bootstrap-vcpkg.sh
+```
+3) Run the shell script with this command:
+```
+./bootstrap-vcpkg.sh
+```
+4) Change your directory back to the home directory (~)
+5) Use VIM to edit your OS' shell configuration file according to what type of shell your OS uses (Linux users google for the name of the config file for their distribution. For Mac users, the name should always be .zshrc). 
+```
+vim <insert name of shell configuration file>
+```
+6) Then type this anywhere in the file:
+```
+export PATH="$HOME/vcpkg:$PATH"
+```
+7) Next, reload the shell configuration:
+```
+source ~/<insert name of shell configuration file>
+```
+8) Now, test the installation. You should get a result from just typing vcpkg
+
+##### (For Linux)
+9) Install the following packages using your distro's package manager(each of the packages might have different names depending on the distro. Make sure you also have cmake installed and any build-essential or packages like it):
+- ninja
+- libxinerama
+- libxcursor
+- xorg
+- libglu1-mesa
+- pkg-config
+- autoconf
+- libtool
+
+##### (For Mac)
+9) Install the following packages using Homebrew(Make sure you have installed the XCode Command Line tools and CMake):
+- ninja  
+- pkg-config 
+- autoconf 
+- libtool
+
+
 
 ### Setup (For after VCPKG Environment Setup)
 1) Clone this repository into your designated area for projects.
@@ -39,21 +96,21 @@ Just download one of the releases on the github and run the exe, there should be
 2) Go to your settings.json and add this to the list of settings:
 #### For Windows:
 ```
-}
+{
 "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
     ],
     "cmake.generator": "Visual Studio 17 2022"
-{
+}
 ```
 #### For Mac/Linux:
 ```
-}
+{
 "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
     ],
     "cmake.generator": "Ninja"
-{
+}
 ```
 
 ### When Using Cmake Manually
@@ -67,4 +124,7 @@ cmake -S <source_dir> -B <build_dir> -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAI
 ```
 cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 ```
+
+#### Visual Studio Community Edition
+Visual Studio itself should require very minimal setup, just find the project in the directory you cloned it into.
 
