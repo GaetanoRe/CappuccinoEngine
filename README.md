@@ -125,6 +125,6 @@ cmake -S <source_dir> -B <build_dir> -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAI
 cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 ```
 
-#### Visual Studio Community Edition
+### Visual Studio Community Edition
 Visual Studio itself should require very minimal setup, just find the project in the directory you cloned it into.
 
