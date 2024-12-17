@@ -107,7 +107,7 @@ source ~/<insert name of shell configuration file>
 ```
 {
 "cmake.configureArgs": [
-    "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
+    "-DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake" 
     ],
     "cmake.generator": "Ninja"
 }
