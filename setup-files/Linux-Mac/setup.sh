@@ -27,7 +27,10 @@ LIBRARIES=$(cat "$LIBRARIES_FILE")
 # Install libraries
 for LIB in $LIBRARIES; do
     echo "Installing $LIB..."
-    vcpkg install $LIB --triplet x64-linux || exit 1
+    if ! vcpkg install $LIB --triplet x64-linux; then
+        echo "Error installing $LIB. Check the logs for details."
+        exit 1
+    fi
 done
 
 echo "All libraries installed successfully!"
