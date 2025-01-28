@@ -5,3 +5,5 @@ freetype
 glm
 bullet3
 openal-soft
+assimp
+imgui

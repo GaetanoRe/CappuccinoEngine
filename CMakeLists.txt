@@ -56,12 +56,18 @@ find_package(Freetype REQUIRED)
 # Find SOIL
 find_package(soil CONFIG REQUIRED)
 
+#Find ASSIMP
+find_package(assimp CONFIG REQUIRED)
+
+#Find ImGUI
+find_package(imgui CONFIG REQUIRED)
+
 # Add source files for the executable
 add_executable(${PROJECT_NAME}
     src/main.cpp
     src/engine.cpp
     src/window.cpp
- "include/renderer.h")
+    )
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME}
@@ -72,6 +78,8 @@ target_link_libraries(${PROJECT_NAME}
     GLEW::GLEW
     OpenAL::OpenAL
     Freetype::Freetype
+    assimp::assimp
+    imgui::imgui
 )
 
 # Include directories for Required Libraries
@@ -83,6 +91,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${OPENAL_INCLUDE_DIR}
     ${SOIL_INCLUDE_DIR}
     ${FREETYPE_INCLUDE_DIR}
+    ${ASSIMP_INCLUDE_DIR}
+    ${IMGUI_INCLUDE_DIR}
 )
 
 # Platform-specific configurations
