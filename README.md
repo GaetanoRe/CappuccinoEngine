@@ -123,9 +123,11 @@ source ~/<insert name of shell configuration file>
 "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
     ],
-    "cmake.generator": "MinGW Makefiles"
+    "cmake.generator": "Ninja"
 }
 ```
+
+(You will have to force VSCode for Windows to specify g++ as the prefered compiler since MVSC (the default windows compiler) is not open source.)
 #### For Mac/Linux:
 ```
 {
@@ -138,12 +140,6 @@ source ~/<insert name of shell configuration file>
 
 ### When Using Cmake Manually
 Make sure you type your commands to build the project in the command line as shown:
-#### For Windows:
-```
-cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
-```
-
-#### For Mac/Linux:
 ```
 cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 ```
