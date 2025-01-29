@@ -11,6 +11,8 @@ Just download one of the releases on the github and run the exe, there should be
 - CMake
 - Any type of code editor or IDE designed for C++ or C (make sure you use cmake so that it integrates with vcpkg)
 
+#### Disclaimer: If vcpkg is not working out for you on your Linux distribution or on your Mac, you may result to utilizing your built in package manager for the following libraries. The libraries needed are listed in the libraries.txt file.
+
 ### Tools you will need (System Specific):
 #### For Windows:
 - MSYS2
@@ -132,7 +134,7 @@ source ~/<insert name of shell configuration file>
 ```
 {
 "cmake.configureArgs": [
-    "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
+    "-DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake" 
     ],
     "cmake.generator": "Ninja"
 }
