@@ -13,7 +13,12 @@ Just download one of the releases on the github and run the exe, there should be
 
 ### Tools you will need (System Specific):
 #### For Windows:
-- Visual Studio 2022 with the C++ Desktop Environment Package (Disclaimer: If you would like to use Visual Studio Code, that is fine, but you must install this for the native windows C++ compiler and C compiler)
+- MSYS2
+- MinGW-w64 toolchain (provided with MSYS2)
+- Ninja (for faster builds, also provided with MSYS2)
+- Make (provided with MSYS2)
+DISCLAIMER: You may just utilize Visual Studio 2022 Community Edition with the C++ Destop Development Package included. However, this is a proprietary Compiler, so to keep things open source, MSYS2 is preferred.
+
 #### For Linux
 - Ninja
 - libxinerama
@@ -31,6 +36,21 @@ Just download one of the releases on the github and run the exe, there should be
 - libtool
 - XCode Command Line Tools
 
+### MSYS2 Environment Setup (Windows Only)
+1) Install MSYS2 and follow the instructions on the website up to step 5: https://www.msys2.org/
+2) Close the UCRT64 window and search for your msys2 folder that you set your installation to
+3) Run the "msys2.exe" executable
+4) Run these commands:
+```
+$ pacman -Syu
+$ pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja
+```
+5) Once this is done installing, go to your PATH variable and add the the following directory within your msys2 folder:
+```
+/mingw64/bin/
+```
+
+You are all set up!!!
 
 ### VCPKG Enviornment Setup
 #### Windows:
@@ -96,11 +116,14 @@ source ~/<insert name of shell configuration file>
 2) Go to your settings.json and add this to the list of settings:
 #### For Windows:
 ```
+"C_Cpp_Runner.cCompilerPath": "g++",
+"C_Cpp_Runner.cppCompilerPath": "g++",
+"C_Cpp.default.compilerPath": "g++",
 {
 "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" 
     ],
-    "cmake.generator": "Visual Studio 17 2022"
+    "cmake.generator": "MinGW Makefiles"
 }
 ```
 #### For Mac/Linux:
@@ -117,7 +140,7 @@ source ~/<insert name of shell configuration file>
 Make sure you type your commands to build the project in the command line as shown:
 #### For Windows:
 ```
-cmake -S <source_dir> -B <build_dir> -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
+cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake
 ```
 
 #### For Mac/Linux:
@@ -126,5 +149,5 @@ cmake -S <source_dir> -B <build_dir> -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=$VCPKG_RO
 ```
 
 ### Visual Studio Community Edition
-Visual Studio itself should require very minimal setup, just find the project in the directory you cloned it into.
+Visual Studio itself should require very minimal setup, just find the project in the directory you cloned it into. (However, the Visual Studio Code Environment is reccomended to keep the binaries open source)
 
