@@ -41,6 +41,9 @@ find_package(glfw3 REQUIRED)
 # Find GLEW
 find_package(GLEW REQUIRED)
 
+# Find glad
+find_package(glad REQUIRED)
+
 #Find GLM
 find_package(glm CONFIG REQUIRED)
 
@@ -67,12 +70,13 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/engine.cpp
     src/window.cpp
-    )
+     "src/input.cpp" "src/settings.cpp")
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME}
     glfw
     glm::glm
+    glad::glad
     soil
     ${BULLET_LIBRARIES}
     GLEW::GLEW
@@ -86,6 +90,7 @@ target_link_libraries(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${GLFW_INCLUDE_DIR}
     ${GLEW_INCLUDE_DIR}
+    ${GLAD_INCLUDE_DIR}
     ${GLM_INCLUDE_DIR}
     ${BULLET_INCLUDE_DIR}
     ${OPENAL_INCLUDE_DIR}
